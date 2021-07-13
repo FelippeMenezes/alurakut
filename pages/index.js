@@ -14,12 +14,12 @@ function ProfileSidebar(propriedades) {
 export default function Home() {
   const usuarioAleatorio = 'felippemenezes';
   const pessoasFavoritas = [
-    'juunegreiros',
-    'omariosouto',
-    'peas',
-    'rafaballerini',
-    'marcobrunodev',
-    'felipefialho'
+    'bussularf',
+    'augustopresto',
+    'pedro-resende-br',
+    'raquellima7',
+    'alxgambati',
+    'dedemenezes'
   ]
 
   return (
