@@ -25,8 +25,8 @@ export default function Home() {
   const usuarioAleatorio = 'felippemenezes';
   const [comunidades, setComunidades] = React.useState([{
     id: '712052976215670176083752374',
-    title: 'Eu odeio acordar cedo!',
-    image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
+    title: 'Eu S2 capivaras!',
+    image: 'https://i.pinimg.com/originals/57/ba/ab/57baab9b1e06a4e03ed7e59549004bde.jpg'
   }]);
   // const comunidades = comunidades[0];
   // const alteradorDeComunidades/setComunidades = comunidades[1];
