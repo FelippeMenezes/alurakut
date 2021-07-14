@@ -1,7 +1,7 @@
 import React from 'react';
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
-import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons'
+import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 
 function ProfileSidebar(propriedades) {
@@ -10,7 +10,7 @@ function ProfileSidebar(propriedades) {
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{ borderRadius: '8px' }} />
       <hr/>
       <p>
-        <a className="boxLink" href={`https://github.com/${propriedades.githubUser}.png`}>
+        <a className="boxLink" href={`https://github.com/${propriedades.githubUser}`}>
           @{propriedades.githubUser}
         </a>
       </p>
@@ -22,6 +22,7 @@ function ProfileSidebar(propriedades) {
 }
 
 export default function Home() {
+  const usuarioAleatorio = 'felippemenezes';
   const [comunidades, setComunidades] = React.useState([{
     id: '712052976215670176083752374',
     title: 'Eu odeio acordar cedo!',
@@ -29,7 +30,7 @@ export default function Home() {
   }]);
   // const comunidades = comunidades[0];
   // const alteradorDeComunidades/setComunidades = comunidades[1];
-  const usuarioAleatorio = 'felippemenezes';
+  console.log('Nosso teste', );
   // const comunidades = ['Alurakut'];
   const pessoasFavoritas = [
     'bussularf',
@@ -59,7 +60,7 @@ export default function Home() {
             <h2 className="subTitle" >O que você deseja fazer?</h2>
             <form onSubmit={function handleCriaComunidade(e) {
               e.preventDefault();
-              const dadosForm = new FormData(e.target);
+              const dadosDoForm = new FormData(e.target);
 
               const comunidade = {
                 id: new Date().toISOString(),
@@ -67,7 +68,7 @@ export default function Home() {
                 image: dadosDoForm.get('image'),
               }
               // comunidades.push('Alura Stars');
-              const comunidadesAtualizadas = [...comunidades, comunidade]
+              const comunidadesAtualizadas = [...comunidades, comunidade];
               setComunidades(comunidadesAtualizadas)
             }}>
               <div>
