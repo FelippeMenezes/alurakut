@@ -1,6 +1,6 @@
 # Alurakut <img src="http://alurakut.vercel.app//logo.svg" width="45" height="45">
 
-Imersão Alura React Dev 
+Imersão Alura React Dev [https://www.alura.com.br/imersao-react](https://alurakut-three-swart.vercel.app/)!
 
 You can take a look at [https://alurakut-three-swart.vercel.app/](https://alurakut-three-swart.vercel.app/)!
 
